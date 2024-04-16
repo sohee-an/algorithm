@@ -47,7 +47,6 @@ def Solve():
     global visited
     visited = [[0] * 100 for _ in range(100)]
 
-  
     plantarr=[[0]*m for _ in range(n) ]
 
     for i in range(x):
