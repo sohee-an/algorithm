@@ -25,7 +25,6 @@ def dfs(plantarr,x,y,m,n):
             ny=y+dy[i]
             
             if 0<=nx<n and 0<=ny<m and plantarr[nx][ny]==1 and visited[nx][ny]==0:
-              
                 
                 q.append((nx, ny))
                 visited[nx][ny]=1

@@ -1,10 +1,11 @@
 from collections import deque
+# 2-A 문제
 
 dy = [-1, 0, 1, 0]
 dx = [0, 1, 0, -1]
 
 n, m = map(int, input().split())
-# 
+
 a = [] 
 for _ in range(n):
     row = list(map(int, input().strip()))
