@@ -1,4 +1,4 @@
-# 세로, 가로, 네모 숫자
+# 가로, 세로, 네모 숫자
 from collections import deque
 
 n,m,k=map(int,input().split())
