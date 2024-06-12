@@ -27,7 +27,7 @@ while q:
         nx=x+dx[i]
        
         if 0<=nx<N and 0<=ny<M and graph[nx][ny]==0:
-            
+           
             graph[nx][ny]=graph[x][y]+1
             q.append((nx,ny))
             

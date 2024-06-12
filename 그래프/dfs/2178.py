@@ -22,6 +22,7 @@ while q:
         ny = y + dy[i]
         nx = x + dx[i]
         if 0 <= ny < n and 0 <= nx < m and a[ny][nx] == 1 and visited[ny][nx] == 0:
+           
             visited[ny][nx] = visited[y][x] + 1
             q.append((ny, nx))
 
