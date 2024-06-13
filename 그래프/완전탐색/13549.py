@@ -15,11 +15,11 @@ def bfs(start,end):
         
         if current == end:
             return visited[current] - 1 
-        # 시작할때 1로 방문을 표시햇으니 끝날때 1를 빼야된다
+        
         
         next_pos = current * 2
         if 0 <= next_pos <= max_pos and not visited[next_pos]:
-            visited[next_pos] = visited[current]  # +1을 하지 않음
+            visited[next_pos] = visited[current] 
             q.append(next_pos)
         
         
@@ -28,8 +28,5 @@ def bfs(start,end):
                 visited[next_pos]=visited[current]+1
                 q.append(next_pos)
                 
-       
-        
-    
     
 print(bfs(n,k))
