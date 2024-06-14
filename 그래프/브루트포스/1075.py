@@ -3,6 +3,7 @@ F=int(input())
 
 result_list=[]
 
+# 이걸 다시 보자
 N //= 100
 N *= 100
 
