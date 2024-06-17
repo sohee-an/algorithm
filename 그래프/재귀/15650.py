@@ -1,30 +1,14 @@
-n,m =map(int,input().split(" "))
-
-
-list=[]
-result=[]
-result_set=set()
-def backtrack():
-    if len(list) == m:
-        
-        sorted_tuple = tuple(sorted(list))  
-        if sorted_tuple not in result_set:
-            result_set.add(sorted_tuple)
-            result.append(list.copy())
-
+n, m = map(int, input().split())
+ 
+s = []
+def dfs(start):
+    if len(s)==m:
+        print(' '.join(map(str,s)))
         return
     
-    for i in range(1, n + 1):
-        if i not in list:
-            
-            list.append(i)
-            backtrack()
-            
-            list.pop()
-
-backtrack()
-
-
-for i in result:
-       print(' '.join(map(str, i)))
-
+    for i in range(start, n+1):
+        s.append(i)
+        dfs(i)
+        s.pop()
+    
+dfs(1)
