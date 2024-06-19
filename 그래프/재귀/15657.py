@@ -10,7 +10,7 @@ def solution(start):
     if len(list)==m:
         print(' '.join(map(str,list)))
         return 
-    
+    print("list",list)
     for i in range(start,n):
         list.append(input_list[i])
         solution(i)
