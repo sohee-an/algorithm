@@ -11,35 +11,35 @@ result = []
 list=[]
 def solution():
     if len(list)==M:
-        print(' '.join(map(str,list)))
+        print(' '.join(map(str,list))) 1 2 4
         return 
     
     
     for i in range(1,N+1):
         if i not in list:
-            list.append(i) 
+            list.append(i) 3 4 
             solution()
-            list.pop()
+            list.pop() 1 2 
     
 
 solution()
 
-# arr = [0] * 10
-# isused = [False] * 10
+arr = [0] * 10
+isused = [False] * 10
 
-# def func(k):
-#     if k == m:
-#         print(' '.join(map(str, arr[:m])))
-#         return
+def func(k):
+    if k == m:
+        print(' '.join(map(str, arr[:m])))
+        return
 
-#     for i in range(1, n + 1):
-#         if not isused[i]:
-#             arr[k] = i
-#             isused[i] = True
-#             func(k + 1)
-#             isused[i] = False
+    for i in range(1, n + 1):
+        if not isused[i]:
+            arr[k] = i
+            isused[i] = True
+            func(k + 1)
+            isused[i] = False
 
-# func(0)
+func(0)
 
 # def backtrack():
 #     if len(result) == M:
