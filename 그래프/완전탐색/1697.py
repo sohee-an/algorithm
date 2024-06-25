@@ -22,3 +22,11 @@ def bfs(start, target):
 n, k = map(int, input().split())
 
 print(bfs(n, k))
+
+
+def solution(x):
+    if x<0:
+        return  x * solution(x-1)
+    
+
+solution(5)
