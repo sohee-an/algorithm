@@ -4,18 +4,18 @@ nums_list = list(map(int, input().split(" ")))
 
 res = 0
 
-def solution(x, sum):
+def solution(lev, sum):
     global res
-    if x == n:
+    if lev == n:
         if sum == m:
             res += 1
         return
     
     # 현재 인덱스의 값을 포함하는 경우
-    solution(x + 1, sum + nums_list[x])
+    solution(lev + 1, sum + nums_list[lev])
     
     # 현재 인덱스의 값을 포함하지 않는 경우
-    solution(x + 1, sum)
+    solution(lev + 1, sum)
 
 solution(0, 0)
 

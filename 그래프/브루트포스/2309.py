@@ -12,7 +12,7 @@ def solution(lev,temp_list):
         if len(temp_list)==7 and sum(temp_list)==100:
             for num in sorted(temp_list):
                 print(num)  
-            return 
+            return
         return 
         
     else:
