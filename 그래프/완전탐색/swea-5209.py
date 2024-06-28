@@ -6,6 +6,7 @@ arr_nums=[]
 for i in range(n):
     row =list(map(int,input().split(" ")))
     arr_nums.append(row)
+    
 visited=[0 *n]
 res=2140000
 def soltuion(lev,total):
