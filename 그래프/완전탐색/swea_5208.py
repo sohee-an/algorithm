@@ -14,4 +14,6 @@ def solution(lev,cnt,sm):
 
 solution(1,0,0)
 
+
+
 print(res)

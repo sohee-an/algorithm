@@ -19,3 +19,4 @@ def solution(lev,sum):
     
 solution(0,0)
 print(res)
+
