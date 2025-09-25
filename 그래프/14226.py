@@ -22,7 +22,7 @@ def bfs(s,c):
         if cs==n:
             return c_count
         for ns, nc in [(cs, cs), (cs+cc, cc), (cs-1, cc)]:
-            if 0<=ns<=max and 0<=nc<=max:
+            if 0<=ns<=max and 0<=nc<=max and not visited[ns][nc]:
                 visited[ns][nc] = True
                 q.append([ns,nc,c_count+1])
                 
