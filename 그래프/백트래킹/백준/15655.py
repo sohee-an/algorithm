@@ -1,20 +1,15 @@
 n, m = map(int, input().split())
 arr = sorted(map(int, input().split()))
-path = []
-# 1789 
-# 11234
 
-def dfs(depth, start):
+path = []
+
+def dfs(start, depth):
     if depth == m:
         print(*path)
         return
-    prev = 0
     for i in range(start, n):
-        if prev == arr[i]:
-            continue
-        prev = arr[i]
         path.append(arr[i])
-        dfs(depth+1, i)  
+        dfs(i+1, depth+1)  # 다음은 i+1부터 시작 → 오름차순 보장
         path.pop()
 
 dfs(0, 0)
