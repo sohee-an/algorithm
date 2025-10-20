@@ -4,7 +4,7 @@
 # 마지막 도착 계단은 반드시 밟아야 한다.
 import sys
 input = sys.stdin.readline
-
+ 
 n = int(input())
 stair = [0] + [int(input()) for _ in range(n)] 
 
